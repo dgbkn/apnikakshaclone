@@ -1,0 +1,2690 @@
+<!DOCTYPE html> 
+<html lang="en"><head>
+		  <title>Apni Kaksha</title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="icon" href="https://main.apnikaksha.net/assets/images/client/apnikaksha/Logo3.svg" sizes="16x16 32x32" type="image/png">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		  <script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-715132402&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://main.apnikaksha.net/assets/js/jquerymin.js"></script>
+		  <script src="https://main.apnikaksha.net/assets/js/bootstrapmin.js"></script>
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+		  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+		  <!-- PDF Viewer -->
+		  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1394306-6"></script>
+		  <script src="https://unpkg.com/pdfobject@2.2.4/pdfobject.min.js"></script>
+		  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+		  <script>
+			window.OneSignal = window.OneSignal || [];
+			OneSignal.push(function() {
+				OneSignal.init({
+					appId: "fe862f3e-7373-441c-86cc-b89a8b3b780a",
+				});
+			});
+		</script>
+		  <!-- //PDF Viewer -->
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.css">
+		  <style>
+						:root {
+			  --bgcolor: #2C2C96;
+			  --btnredcolor:#2C2C96;
+			  --btnbluecolor:#2C2C96;
+			  --btnbluecolor2:#2C2C96;
+			  --logoheight:65px;
+			  --successsection:#d3d3d4;
+			  --topnav1:#373b58;
+			  --topnav2:#234786;
+			  --topnav3:#0d55b8;
+			  --knowmorecss:transparent;
+			  --knowmorecsshover:#d2d2d2;
+			  --buycolor:#2C2C96;
+			  --footerbgcolor:rgba(34,38,53,1);
+			  --footercolor:#fff;
+			  --quiclinka:#fff !Important;
+			}
+			@font-face {
+			  font-family: 'Poopins';
+			  src: url('https://main.apnikaksha.net/assets/fontall/poppins/Poppins-Regular.ttf')  format('truetype');
+			}
+			body{
+				font-family:"Poopins" !Important;
+				font-size:11px !Important;
+			}
+			.h4, h4 {
+				font-size: 16px;
+			}
+			.h3, h3 {
+				font-size: 17px;
+			}
+			.h1, h1 {
+				font-size: 32px;
+			}
+			 		  </style>
+		 
+		  <link rel="stylesheet" href="https://main.apnikaksha.net/assets/css/main.css?v=2021-09-10 20:16:56">
+		  <style>
+			.pdfobject-container {
+				max-width: 100%;
+				width: 100%;
+				height: 600px;
+				border: 10px solid rgba(0,0,0,.2);
+				margin: 0;
+			}
+
+			.pdfobject-com {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 2016;
+			}
+
+			.pdfobject-com a:link, .pdfobject-com a:visited {
+				color: #fff;
+				font-weight: bold;
+				display: block;
+				padding: .25rem 1rem;
+				background: #6699FF;
+				text-decoration: none;
+			}
+
+			.pdfobject-com a:hover, .pdfobject-com a:visited:hover {
+				color: #FFF;
+				background: #FF3366;
+				text-decoration: none;
+			}
+			.categoryinner {
+				cursor: pointer;
+				border: 1px solid #bfbfbf;
+				border-radius: 3px;
+				margin-bottom: 12px;
+				box-shadow: 0px 0px 10px 0px #dedddd;
+			}
+			.btnappcategory,.btnappcategory:hover {
+				background-color: var(--btnredcolor);
+				color: #fff;
+				box-shadow: 0px 0px 10px 0px #cac5c5;
+				min-width: 200px;
+			}
+			.categoryinneractive{
+				border: 2px solid orange;
+			}
+			.pdfobject-com a:before {
+				content: "\2190";
+				margin-right: .25rem;
+			}
+			.yellowbtntop {
+				color: black;
+				border: 1px solid #dedada;
+				border-radius: 12px;
+				background-color: #fff;
+			}
+			.webcourseinnerdiv{
+				max-height: unset !important;
+				min-height: unset !important;
+			}
+			.testseriesslider.slick-initialized.slick-slider .webcourseinnerdiv {
+				min-height: 120px !important;
+				max-height: 120px !important;
+			}
+			.slick-track{
+				margin-left: unset !important;
+				margin-right: unset !important;
+			}
+			.quicklink a{
+				color:var(--quiclinka);
+			}
+			.btnregistercss {
+				color: #fff;
+				background-color: var(--btnredcolor);
+				border-radius: 5px;
+				border: 1px solid var(--btnredcolor);
+				top: 15px;
+				position: relative;
+				margin-left: 10px;
+				min-width: 110px;
+			}
+			.btnlogincss {
+				color: #fff;
+				background-color: var(--bgcolor);
+				border-radius: 5px;
+				border: 1px solid #7663ff;
+				top: 15px;
+				position: relative;
+				margin-left: 10px;
+				min-width: 110px;
+			}
+			.btnsellercss,.btnsellercss:hover{
+				background-color:var(--bgcolor) !important;
+				border: 1px solid var(--bgcolor) !important;
+				border-radius: 5px !important;
+				color:#e7efff !important;
+			}
+			.knowmorecss{
+				background-color: var(--knowmorecss) !important;
+				border: 1px solid #bbb8b8 !important;
+				border-radius: 5px !important;
+				color:#303030 !important;
+			}
+			.knowmorecss:hover{
+				background-color: var(--bgcolor) !important;
+				border: 1px solid var(--bgcolor) !important;
+				border-radius: 5px !important;
+				color:#fff !important;
+			}
+			.checked {
+				color: #ffbb00;
+			}
+							span.price {
+					font-size: 20px !important;
+					font-weight: 600;
+					color: #000;
+				}
+						.primdishfooter{
+				height: 1px;
+				border: 1px solid #0cb8a8;
+				background-color: #0cb8a8;
+				max-width: 35px;
+				margin-left: 0px;
+				margin-top: 0px;
+				margin-bottom: 10px;
+			}
+			.text-theme {
+				color: black;
+				font-weight: unset;
+			}
+			#buy a {
+				border: 1px solid var(--buycolor);
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				border-radius: 5px;
+				background-color: var(--buycolor);
+				color: #fff;
+				margin-right: 10px;
+			}
+			.buy_now,.buy_now:hover{
+				border: 1px solid var(--buycolor);
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				border-radius: 10px;
+				background-color: var(--buycolor);
+				color: #fff;
+			}
+			.discdiv{
+				height: 54px;
+				background-color: var(--buycolor) !important;
+				border-radius: 5px;
+			}
+			.description-label {
+				color: var(--quiclinka);
+			}
+			.disc-slide {
+				color: var(--quiclinka);
+			}
+			.footercolor{
+				background-color: var(--footerbgcolor);
+				color: var(--footercolor);
+			}
+			.webcoursediv {
+				border: 1px solid #d3d1d1 !important;
+				border-radius: 7px !important;
+				box-shadow: 1px 1px 6px 4px #dedede !important;
+				margin: 10px !important;
+				min-height: 405px;
+				max-height: 405px;
+			}
+			.course-feat img {
+				height: 16px;
+				width: 16px;
+			}
+			.test-course-feat img {
+				height: 16px;
+				width: 16px;
+			}
+			.color-black,.color-black:hover{
+				color:black;
+			}
+		  </style>
+		  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-142449684-1"></script>
+		  <script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'UA-142449684-1');
+		 </script><script src="https://cdn.onesignal.com/sdks/OneSignalPageSDKES6.js?v=151507" async=""></script>
+		 <!-- Global site tag (gtag.js) - Google Ads: 715132402 -->
+		 <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-715132402"></script>
+		 <script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'AW-715132402');
+		 </script>
+		 <script src="https://documentcloud.adobe.com/view-sdk/2.19.2_2.6.1-0101ef3/ViewSDKInterface.js"></script><style type="text/css">.ViewSDK_hideOverflow {
+        overflow: hidden;
+    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
+        width: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
+        width: 100vw;
+    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
+        height: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
+        height: 100vh;
+    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:99999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
+        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        position:fixed; top:0; left:0; z-index:99999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_hideOverflow {
+        overflow: hidden;
+    }</style><style type="text/css">.ViewSDK_parentRelativeWidth {
+        width: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeWidth {
+        width: 100vw;
+    }</style><style type="text/css">.ViewSDK_parentRelativeHeight {
+        height: 100%;
+    }</style><style type="text/css">.ViewSDK_viewportRelativeHeight {
+        height: 100vh;
+    }</style><style type="text/css">.ViewSDK_fullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:9999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_LBFullScreenPDFViewer {
+        width:100vw !important; height:100vh !important;
+        max-width:100vw !important; max-height:100vh !important;
+        position:fixed; top:0; left:0; z-index:10000;
+        margin: 0 !important; padding: 0 !important;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: none !important;
+    }</style><style type="text/css">:root { --ViewSDK-mobile-viewport-height:1vh; }</style><style type="text/css">.ViewSDK_fullScreenPDFViewerMobile {
+        width:100vw !important; height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        max-width:100vw !important; max-height:calc(100 * var(--ViewSDK-mobile-viewport-height)) !important;
+        position:fixed; top:0; left:0; z-index:9999;
+        margin: 0 !important; padding: 0 !important;
+        border: none !important;
+    }</style><style type="text/css">.ViewSDK_LBLoader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 10000;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #1473E6;
+        width: 56px !important;
+        height: 56px !important;
+        margin: -32px 0 0 -32px;
+        border-radius: 50%;
+        -webkit-animation: lbSpin 2s linear infinite;
+        animation: lbSpin 2s linear infinite;
+    }
+    @-webkit-keyframes lbSpin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+    @keyframes lbSpin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }</style><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/715132402/?random=1631305016779&amp;cv=9&amp;fst=1631305016779&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=376635470&amp;u_h=1366&amp;u_w=1024&amp;u_ah=1366&amp;u_aw=1024&amp;u_cd=30&amp;u_his=7&amp;u_tz=330&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;gtm=2oa910&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fmain.apnikaksha.net%2F&amp;ref=https%3A%2F%2Fmain.apnikaksha.net%2F&amp;tiba=Apni%20Kaksha&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script></head><body oncontextmenu="return false;"><input type="hidden" name="userId" id="userId" value="33715"><input type="hidden" name="usertoken" id="userToken" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMzNzE1IiwiZW1haWwiOiJzYW1hcnRoczQ0OUBnbWFpbC5jb20iLCJ0aW1lc3RhbXAiOjE2MzEzMDUwMTZ9.BRBpPPrxYdcZ63fris2-6A8tLUtX8yV03f07HGq43as"><input type="hidden" name="username" id="username" value="Samarth Singh">		 <script>
+				var coursesall = '[]';
+				var appcategory='[{"id":"2","name":"All Categories","image":"https:\/\/downloadappx.appx.co.in\/appcategory\/2021-08-01-0.3029164742088484.png","description":"","banner":"https:\/\/downloadappx.appx.co.in\/appcategory\/2021-08-01-0.17414055009138685.jpg","video":"https:\/\/downloadappx.appx.co.in\/appcategory\/2021-08-01-0.5396692458187249.mp4","sortingparam":"0.00","status":"1"}]';
+				var getcategory='2';
+		 </script>
+	
+	
+		
+		<div class="row topnav hide nomrgn">
+			<div class="container">
+				  <div class="row">
+					<div class="col-md-6 col-xs-12 ">
+						<i class="fa fa-envelope"></i> Email :  email				</div>
+					<div class="col-md-6 col-xs-12 media-text-left text-right d-none">
+						<i class="fa fa-phone"></i> Call us : <a style="color:white !important;" href="tel:"></a>  
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row nomrgn">
+			<div class="container">
+				<nav class="navbar navlinks">
+					<div class="container">
+						<div class="navbar-header">
+							  <button type="button" class="navbar-toggle m-t-15" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							  </button>
+							  <span>
+								<a class="" href="https://main.apnikaksha.net/">
+									<img class="logohgt" src="https://main.apnikaksha.net/assets/images/client/apnikaksha/Logo3.svg">
+								</a>
+								<span class="" style="margin-left: 35px;">
+									<button type="button" class="btn yellowbtntop">All Categories&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-down"></i></button>
+								</span>
+							  
+							  </span>
+							
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							  <ul class="nav navbar-nav navbar-right">
+																													<li class="dropdown m-t-15 dropdownhover">
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-user usericon"></i> Hi Samarth Singh</a>
+											<ul class="dropdown-menu myprofilemenu">
+																									<li><a href="https://main.apnikaksha.net/my-courses">My Courses</a></li>
+																																						<li><a href="javascript:void(0);" id="logout">Logout</a></li>
+											</ul>
+										</li>
+																  </ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	
+
+		<div class="row nomrgn">
+		<div id="myCarousel" class="carousel slide mxght" data-ride="carousel">
+		  
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner mxght">
+						<div class="item active">
+			  <a href="https://main.apnikaksha.net/">
+				<img class="mxght" src="https://downloadappx.appx.co.in/website_slider/2021-08-01-0.3161194990986895.jpg" alt="" width="100%">
+			  </a>
+			  
+			</div>
+						
+		  </div>
+		
+		  <!-- Left and right controls -->
+		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		  </a>
+		</div>
+
+	</div>
+		<div class="row nomrgn">
+		<div class="container">
+			<div class="row m-t-20">
+				<div class="col-md-8 col-xs-8">
+					<h3>All Courses</h3>
+				</div>
+				<div class="col-md-4 col-xs-4 text-right">
+					<h3><a href="https://main.apnikaksha.net/allcourse" class="color-black">See All</a></h3>
+				</div>
+			</div>
+			<div class="row m-t-20 m-b-40">
+				<div class="recordedcourseslider slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+										<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4212px; transform: translate3d(-972px, 0px, 0px);"><div class="col-md-4 col-xs-6 slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" tabindex="-1" style="width: 324px;">
+							<div class="webcoursediv">
+								<div class=""><img src="https://downloadappx.appx.co.in/paid_course2/2021-08-05-0.0488418088646434.jpg" width="100%"></div>
+								<div class="webcourseinnerdiv">
+									<div><h4 class="m-b-5"><b>Boards XII 2022 (Term 1 / Term 2)</b></h4></div>
+																		<div class="text-brown disc">Complete Class 12th CBSE 2021-22 Syllabus, According To Term 1 And Ter..</div>
+																											<!-- <div class="m-t-10">Last Date of Registration - 01/08/2021</div>
+									<div>Batch starts from - 01/08/2021</div> -->
+																			<div class="m-t-5"><span class="price">Rs.&nbsp;2499</span></div>
+																		<div class="row m-t-10">
+																					<div class="col-md-6 col-xs-6">
+												<a href="https://main.apnikaksha.net/usercourseview/4" class="btn minwidth100 knowmorecss" tabindex="-1">View Details</a>
+											</div>
+											<div class="col-md-6 col-xs-6 text-right">
+												<a href="https://main.apnikaksha.net/usercourseview/4" class="btn minwidth100 btnsellercss" tabindex="-1">View</a>
+											</div>
+											
+										
+									</div>
+								</div>
+							</div>
+						</div><div class="col-md-4 col-xs-6 slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" tabindex="-1" style="width: 324px;">
+							<div class="webcoursediv">
+								<div class=""><img src="https://downloadappx.appx.co.in/paid_course/2021-09-02-0.8836968174090178.jpeg" width="100%"></div>
+								<div class="webcourseinnerdiv">
+									<div><h4 class="m-b-5"><b>Vijay JEE XI (Main &amp; Advanced)</b></h4></div>
+																		<div class="text-brown disc">JEE Mains And Advanced Syllabus For Class XI, Taught By Top Faculties...</div>
+																											<!-- <div class="m-t-10">Last Date of Registration - 12/08/2021</div>
+									<div>Batch starts from - 12/08/2021</div> -->
+																			<div class="m-t-5"><span class="price">Rs.&nbsp;4999</span></div>
+																		<div class="row m-t-10">
+																					<div class="col-md-6 col-xs-6">
+												<a href="https://main.apnikaksha.net/courses/vijay-jee-xi-main-advanced" class="btn minwidth100 knowmorecss" tabindex="-1">View Details</a>
+											</div>
+											<div class="col-md-6 col-xs-6 text-right">
+												<a href="https://main.apnikaksha.net/courses/vijay-jee-xi-main-advanced" class="btn minwidth100 btnsellercss" tabindex="-1">Buy Now</a>
+											</div>
+											
+										
+									</div>
+								</div>
+							</div>
+						</div><div class="col-md-4 col-xs-6 slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1" style="width: 324px;">
+							<div class="webcoursediv">
+								<div class=""><img src="https://downloadappx.appx.co.in/paid_course/2021-09-03-0.2499358143372996.jpeg" width="100%"></div>
+								<div class="webcourseinnerdiv">
+									<div><h4 class="m-b-5"><b>Vijay NEET XI</b></h4></div>
+																		<div class="text-brown disc">NEET Syllabus For Class XI, Taught By Top Faculties. (Starts On 23rd A..</div>
+																											<!-- <div class="m-t-10">Last Date of Registration - 12/08/2021</div>
+									<div>Batch starts from - 12/08/2021</div> -->
+																			<div class="m-t-5"><span class="price">Rs.&nbsp;4999</span></div>
+																		<div class="row m-t-10">
+																					<div class="col-md-6 col-xs-6">
+												<a href="https://main.apnikaksha.net/courses/vijay-neet-xi" class="btn minwidth100 knowmorecss" tabindex="-1">View Details</a>
+											</div>
+											<div class="col-md-6 col-xs-6 text-right">
+												<a href="https://main.apnikaksha.net/courses/vijay-neet-xi" class="btn minwidth100 btnsellercss" tabindex="-1">Buy Now</a>
+											</div>
+											
+										
+									</div>
+								</div>
+							</div>
+						</div><div class="col-md-4 col-xs-6 slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 324px;">
+							<div class="webcoursediv">
+								<div class=""><img src="https://downloadappx.appx.co.in/paid_course/2021-09-05-0.6228754874124411.jpg" width="100%"></div>
+								<div class="webcourseinnerdiv">
+									<div><h4 class="m-b-5"><b>DRONA 2.0 JEE Droppers 2022 (Main/Advanced) </b></h4></div>
+																		<div class="text-brown disc">Complete JEE Mains And Advanced Syllabus For 2021-2022, Taught By Top ..</div>
+																											<!-- <div class="m-t-10">Last Date of Registration - 05/09/2021</div>
+									<div>Batch starts from - 01/01/2021</div> -->
+																			<div class="m-t-5"><span class="price">Rs.&nbsp;3999</span></div>
+																		<div class="row m-t-10">
+																					<div class="col-md-6 col-xs-6">
+												<a href="https://main.apnikaksha.net/courses/drona-20-jee-droppers-2022-main-advanced" class="btn minwidth100 knowmorecss" tabindex="0">View Details</a>
+											</div>
+											<div class="col-md-6 col-xs-6 text-right">
+												<a href="https://main.apnikaksha.net/courses/drona-20-jee-droppers-2022-main-advanced" class="btn minwidth100 btnsellercss" tabindex="0">Buy Now</a>
+											</div>
+											
+										
+									</div>
+								</div>
+							</div>
+						</div><div class="col-md-4 col-xs-6 slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="0" style="width: 324px;">
+							<div class="webcoursediv">
+								<div class=""><img src="https://downloadappx.appx.co.in/paid_course2/2021-08-05-0.577146163148919.jpg" width="100%"></div>
+								<div class="webcourseinnerdiv">
+									<div><h4 class="m-b-5"><b>JEE Droppers 2022 (Mains / Advanced)</b></h4></div>
+																		<div class="text-brown disc">Complete JEE Mains And Advanced Syllabus For 2021-2022, Taught By Top ..</div>
+																											<!-- <div class="m-t-10">Last Date of Registration - 01/08/2021</div>
+									<div>Batch starts from - 01/08/2021</div> -->
+																			<div class="m-t-5"><span class="price">Rs.&nbsp;4999</span></div>
+																		<div class="row m-t-10">
+																					<div class="col-md-6 col-xs-6">
+												<a href="https://main.apnikaksha.net/courses/jee-droppers-2022-mains-advanced" class="btn minwidth100 knowmorecss" tabindex="0">View Details</a>
+											</div>
+											<div class="col-md-6 col-xs-6 text-right">
+												<a href="https://main.apnikaksha.net/courses/jee-droppers-2022-mains-advanced" class="btn minwidth100 btnsellercss" tabindex="0">Buy Now</a>
+											</div>
+											
+										
+									</div>
+								</div>
+							</div>
+						</div><div class="col-md-4 col-xs-6 slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="0" style="width: 324px;">
+							<div class="webcoursediv">
+								<div class=""><img src="https://downloadappx.appx.co.in/paid_course2/2021-08-05-0.0488418088646434.jpg" width="100%"></div>
+								<div class="webcourseinnerdiv">
+									<div><h4 class="m-b-5"><b>Boards XII 2022 (Term 1 / Term 2)</b></h4></div>
+																		<div class="text-brown disc">Complete Class 12th CBSE 2021-22 Syllabus, According To Term 1 And Ter..</div>
+																											<!-- <div class="m-t-10">Last Date of Registration - 01/08/2021</div>
+									<div>Batch starts from - 01/08/2021</div> -->
+																			<div class="m-t-5"><span class="price">Rs.&nbsp;2499</span></div>
+																		<div class="row m-t-10">
+																					<div class="col-md-6 col-xs-6">
+												<a href="https://main.apnikaksha.net/usercourseview/4" class="btn minwidth100 knowmorecss" tabindex="0">View Details</a>
+											</div>
+											<div class="col-md-6 col-xs-6 text-right">
+												<a href="https://main.apnikaksha.net/usercourseview/4" class="btn minwidth100 btnsellercss" tabindex="0">View</a>
+											</div>
+											
+										
+									</div>
+								</div>
+							</div>
+						</div><div class="col-md-4 col-xs-6 slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" style="width: 324px;">
+							<div class="webcoursediv">
+								<div class=""><img src="https://downloadappx.appx.co.in/paid_course/2021-09-02-0.8836968174090178.jpeg" width="100%"></div>
+								<div class="webcourseinnerdiv">
+									<div><h4 class="m-b-5"><b>Vijay JEE XI (Main &amp; Advanced)</b></h4></div>
+																		<div class="text-brown disc">JEE Mains And Advanced Syllabus For Class XI, Taught By Top Faculties...</div>
+																											<!-- <div class="m-t-10">Last Date of Registration - 12/08/2021</div>
+									<div>Batch starts from - 12/08/2021</div> -->
+																			<div class="m-t-5"><span class="price">Rs.&nbsp;4999</span></div>
+																		<div class="row m-t-10">
+																					<div class="col-md-6 col-xs-6">
+												<a href="https://main.apnikaksha.net/courses/vijay-jee-xi-main-advanced" class="btn minwidth100 knowmorecss" tabindex="-1">View Details</a>
+											</div>
+											<div class="col-md-6 col-xs-6 text-right">
+												<a href="https://main.apnikaksha.net/courses/vijay-jee-xi-main-advanced" class="btn minwidth100 btnsellercss" tabindex="-1">Buy Now</a>
+											</div>
+											
+										
+									</div>
+								</div>
+							</div>
+						</div><div class="col-md-4 col-xs-6 slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" style="width: 324px;">
+							<div class="webcoursediv">
+								<div class=""><img src="https://downloadappx.appx.co.in/paid_course/2021-09-03-0.2499358143372996.jpeg" width="100%"></div>
+								<div class="webcourseinnerdiv">
+									<div><h4 class="m-b-5"><b>Vijay NEET XI</b></h4></div>
+																		<div class="text-brown disc">NEET Syllabus For Class XI, Taught By Top Faculties. (Starts On 23rd A..</div>
+																											<!-- <div class="m-t-10">Last Date of Registration - 12/08/2021</div>
+									<div>Batch starts from - 12/08/2021</div> -->
+																			<div class="m-t-5"><span class="price">Rs.&nbsp;4999</span></div>
+																		<div class="row m-t-10">
+																					<div class="col-md-6 col-xs-6">
+												<a href="https://main.apnikaksha.net/courses/vijay-neet-xi" class="btn minwidth100 knowmorecss" tabindex="-1">View Details</a>
+											</div>
+											<div class="col-md-6 col-xs-6 text-right">
+												<a href="https://main.apnikaksha.net/courses/vijay-neet-xi" class="btn minwidth100 btnsellercss" tabindex="-1">Buy Now</a>
+											</div>
+											
+										
+									</div>
+								</div>
+							</div>
+						</div><div class="col-md-4 col-xs-6 slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" tabindex="-1" style="width: 324px;">
+							<div class="webcoursediv">
+								<div class=""><img src="https://downloadappx.appx.co.in/paid_course/2021-09-05-0.6228754874124411.jpg" width="100%"></div>
+								<div class="webcourseinnerdiv">
+									<div><h4 class="m-b-5"><b>DRONA 2.0 JEE Droppers 2022 (Main/Advanced) </b></h4></div>
+																		<div class="text-brown disc">Complete JEE Mains And Advanced Syllabus For 2021-2022, Taught By Top ..</div>
+																											<!-- <div class="m-t-10">Last Date of Registration - 05/09/2021</div>
+									<div>Batch starts from - 01/01/2021</div> -->
+																			<div class="m-t-5"><span class="price">Rs.&nbsp;3999</span></div>
+																		<div class="row m-t-10">
+																					<div class="col-md-6 col-xs-6">
+												<a href="https://main.apnikaksha.net/courses/drona-20-jee-droppers-2022-main-advanced" class="btn minwidth100 knowmorecss" tabindex="-1">View Details</a>
+											</div>
+											<div class="col-md-6 col-xs-6 text-right">
+												<a href="https://main.apnikaksha.net/courses/drona-20-jee-droppers-2022-main-advanced" class="btn minwidth100 btnsellercss" tabindex="-1">Buy Now</a>
+											</div>
+											
+										
+									</div>
+								</div>
+							</div>
+						</div><div class="col-md-4 col-xs-6 slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" tabindex="-1" style="width: 324px;">
+							<div class="webcoursediv">
+								<div class=""><img src="https://downloadappx.appx.co.in/paid_course2/2021-08-05-0.577146163148919.jpg" width="100%"></div>
+								<div class="webcourseinnerdiv">
+									<div><h4 class="m-b-5"><b>JEE Droppers 2022 (Mains / Advanced)</b></h4></div>
+																		<div class="text-brown disc">Complete JEE Mains And Advanced Syllabus For 2021-2022, Taught By Top ..</div>
+																											<!-- <div class="m-t-10">Last Date of Registration - 01/08/2021</div>
+									<div>Batch starts from - 01/08/2021</div> -->
+																			<div class="m-t-5"><span class="price">Rs.&nbsp;4999</span></div>
+																		<div class="row m-t-10">
+																					<div class="col-md-6 col-xs-6">
+												<a href="https://main.apnikaksha.net/courses/jee-droppers-2022-mains-advanced" class="btn minwidth100 knowmorecss" tabindex="-1">View Details</a>
+											</div>
+											<div class="col-md-6 col-xs-6 text-right">
+												<a href="https://main.apnikaksha.net/courses/jee-droppers-2022-mains-advanced" class="btn minwidth100 btnsellercss" tabindex="-1">Buy Now</a>
+											</div>
+											
+										
+									</div>
+								</div>
+							</div>
+						</div><div class="col-md-4 col-xs-6 slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" tabindex="-1" style="width: 324px;">
+							<div class="webcoursediv">
+								<div class=""><img src="https://downloadappx.appx.co.in/paid_course2/2021-08-05-0.0488418088646434.jpg" width="100%"></div>
+								<div class="webcourseinnerdiv">
+									<div><h4 class="m-b-5"><b>Boards XII 2022 (Term 1 / Term 2)</b></h4></div>
+																		<div class="text-brown disc">Complete Class 12th CBSE 2021-22 Syllabus, According To Term 1 And Ter..</div>
+																											<!-- <div class="m-t-10">Last Date of Registration - 01/08/2021</div>
+									<div>Batch starts from - 01/08/2021</div> -->
+																			<div class="m-t-5"><span class="price">Rs.&nbsp;2499</span></div>
+																		<div class="row m-t-10">
+																					<div class="col-md-6 col-xs-6">
+												<a href="https://main.apnikaksha.net/usercourseview/4" class="btn minwidth100 knowmorecss" tabindex="-1">View Details</a>
+											</div>
+											<div class="col-md-6 col-xs-6 text-right">
+												<a href="https://main.apnikaksha.net/usercourseview/4" class="btn minwidth100 btnsellercss" tabindex="-1">View</a>
+											</div>
+											
+										
+									</div>
+								</div>
+							</div>
+						</div><div class="col-md-4 col-xs-6 slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" tabindex="-1" style="width: 324px;">
+							<div class="webcoursediv">
+								<div class=""><img src="https://downloadappx.appx.co.in/paid_course/2021-09-02-0.8836968174090178.jpeg" width="100%"></div>
+								<div class="webcourseinnerdiv">
+									<div><h4 class="m-b-5"><b>Vijay JEE XI (Main &amp; Advanced)</b></h4></div>
+																		<div class="text-brown disc">JEE Mains And Advanced Syllabus For Class XI, Taught By Top Faculties...</div>
+																											<!-- <div class="m-t-10">Last Date of Registration - 12/08/2021</div>
+									<div>Batch starts from - 12/08/2021</div> -->
+																			<div class="m-t-5"><span class="price">Rs.&nbsp;4999</span></div>
+																		<div class="row m-t-10">
+																					<div class="col-md-6 col-xs-6">
+												<a href="https://main.apnikaksha.net/courses/vijay-jee-xi-main-advanced" class="btn minwidth100 knowmorecss" tabindex="-1">View Details</a>
+											</div>
+											<div class="col-md-6 col-xs-6 text-right">
+												<a href="https://main.apnikaksha.net/courses/vijay-jee-xi-main-advanced" class="btn minwidth100 btnsellercss" tabindex="-1">Buy Now</a>
+											</div>
+											
+										
+									</div>
+								</div>
+							</div>
+						</div><div class="col-md-4 col-xs-6 slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" tabindex="-1" style="width: 324px;">
+							<div class="webcoursediv">
+								<div class=""><img src="https://downloadappx.appx.co.in/paid_course/2021-09-03-0.2499358143372996.jpeg" width="100%"></div>
+								<div class="webcourseinnerdiv">
+									<div><h4 class="m-b-5"><b>Vijay NEET XI</b></h4></div>
+																		<div class="text-brown disc">NEET Syllabus For Class XI, Taught By Top Faculties. (Starts On 23rd A..</div>
+																											<!-- <div class="m-t-10">Last Date of Registration - 12/08/2021</div>
+									<div>Batch starts from - 12/08/2021</div> -->
+																			<div class="m-t-5"><span class="price">Rs.&nbsp;4999</span></div>
+																		<div class="row m-t-10">
+																					<div class="col-md-6 col-xs-6">
+												<a href="https://main.apnikaksha.net/courses/vijay-neet-xi" class="btn minwidth100 knowmorecss" tabindex="-1">View Details</a>
+											</div>
+											<div class="col-md-6 col-xs-6 text-right">
+												<a href="https://main.apnikaksha.net/courses/vijay-neet-xi" class="btn minwidth100 btnsellercss" tabindex="-1">Buy Now</a>
+											</div>
+											
+										
+									</div>
+								</div>
+							</div>
+						</div></div></div>
+						
+											
+						
+											
+						
+											
+						
+											
+						
+									<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button></div>
+			</div>
+		</div>
+	</div>
+
+
+
+<div class="pleasewait">
+	<h1>Please Wait...</h1>
+</div>
+
+
+<!-- Modals : Select category Modal include start -->
+<!-- select category -->
+<div class="modal" id="opencategorymodel" tabindex="-1" role="dialog" aria-labelledby="openbookmodel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  bg-white" role="document">
+        <div class="modal-content">
+			<div class="modal-header modalheaderbg">
+				<h4 class="modal-title" style="width:100%;">
+					<span class="text-white">Select Category</span>
+					<span class="pull-right closebtnmodel" style="float: right;cursor:pointer;color:#fff;" data-dismiss="modal">
+						<i class="fa fa-times" aria-hidden="true"></i> 
+					</span>
+				</h4>
+				
+			</div>
+            <div class="modal-body" style="padding:15px;">
+                <form id="categoryselectform">
+					<input type="hidden" name="categoryid" value="">
+					<div class="row">
+													<div class="col-md-4 col-xs-6">
+								<div class="categoryinner" attr-id="2">
+									<div><img src="https://downloadappx.appx.co.in/appcategory/2021-08-01-0.3029164742088484.png" width="100%"></div>
+									<div class="text-center"><h4>All Categories</h4></div>
+								</div>
+							</div>
+											</div>
+					<div class="row m-t-10 text-center">
+						<div class="col-md-12">
+							<button type="submit" class="btn btn-md btnappcategory">Save</button>
+						</div>
+					</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end app category--><!-- Modals : Select category Modal include End -->
+
+
+<!-- Modals : Register Mobile number Modal include start -->
+<!-- start register functionality -->
+<div class="modal" id="registermobno" tabindex="-1" role="dialog" aria-labelledby="openbookmodel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  bg-white" role="document">
+        <div class="modal-content">
+			<div class="modal-header modalheaderbg">
+				<h4 class="modal-title" style="width:100%;">
+					<span class="text-white">Enter Your Phone Number To Receive OTP</span>
+					<span class="pull-right" style="float: right;cursor:pointer;color:#fff;" data-dismiss="modal">
+						<i class="fa fa-times" aria-hidden="true"></i> 
+					</span>
+				</h4>
+				
+			</div>
+            <div class="modal-body" style="padding:15px;">
+                <form id="registermobnomobile">
+					<div class="row">
+						<div class="col-md-12">
+							<input type="text" class="form-control" name="phone" placeholder="Enter Your Phone No." required="">
+						</div>
+					</div>
+					<div class="row m-t-10 text-center">
+						<div class="col-md-12">
+							<button type="submit" class="btn bluebtn registermobnomobile">Send OTP</button>
+						</div>
+					</div>
+                </form>
+				<form id="otponombile" class="hide">
+					<div class="row">
+						<div class="col-md-12">
+							<input type="text" class="form-control" maxlength="4" name="otp" placeholder="Enter Your OTP" required="">
+						</div>
+					</div>
+					<div class="row m-t-10 text-center">
+						<div class="col-md-12">
+							<button type="submit" class="btn bluebtn otponombile">Verify OTP</button>
+						</div>
+					</div>
+                </form>
+				<form id="finalregister" class="hide">
+					<input type="hidden" name="useridinside">
+					<input type="hidden" name="fulljson">
+					<div class="row">
+						<div class="col-md-12">
+							<label>Name</label>
+							<input type="text" class="form-control" name="name" placeholder="Enter Your Name" required="">
+						</div>
+													<div class="col-md-12 m-t-10">
+								<label>Email</label>
+								<input type="email" class="form-control" name="email" placeholder="Enter Your Email" required="">
+							</div>
+												<div class="col-md-12 m-t-10">
+							<label>Phone Number</label>
+							<input type="text" class="form-control" name="phone" placeholder="Your phone no" readonly="">
+						</div>
+													<div class="col-md-12 m-t-10">
+								<label>Password</label>
+								<input type="password" class="form-control" name="password" placeholder="Enter Your Password" required="">
+							</div>
+												<div class="col-md-12 m-t-10">
+							<label>State</label>
+							<select name="state" class="form-control" required="">
+								<option value="">Select</option>
+								<option value="Andman and Nicobar Islands">Andman and Nicobar Islands</option>
+								<option value="Andhra Pradesh">Andhra Pradesh</option>
+								<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+								<option value="Assam">Assam</option>
+								<option value="Bihar">Bihar</option>
+								<option value="Chandigarh">Chandigarh</option>
+								<option value="Chhattisgarh">Chhattisgarh</option>
+								<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+								<option value="Daman and Diu">Daman and Diu</option>
+								<option value="Delhi">Delhi</option>
+								<option value="Goa">Goa</option>
+								<option value="Gujarat">Gujarat</option>
+								<option value="Haryana">Haryana</option>
+								<option value="Himachal Pradesh">Himachal Pradesh</option>
+								<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+								<option value="Jharkhand">Jharkhand</option>
+								<option value="Karnataka">Karnataka</option>
+								<option value="Kashmir">Kashmir</option>
+								<option value="Kerala">Kerala</option>
+								<option value="Lakshadweep">Lakshadweep</option>
+								<option value="Madhya Pradesh">Madhya Pradesh</option>
+								<option value="Maharashtra">Maharashtra</option>
+								<option value="Manipur">Manipur</option>
+								<option value="Meghalaya">Meghalaya</option>
+								<option value="Mizoram">Mizoram</option>
+								<option value="Nagaland">Nagaland</option>
+								<option value="Orissa">Orissa</option>
+								<option value="Pondicherry">Pondicherry</option>
+								<option value="Punjab">Punjab</option>
+								<option value="Rajasthan">Rajasthan</option>
+								<option value="Sikkim">Sikkim</option>
+								<option value="Tamil Nadu">Tamil Nadu</option>
+								<option value="Telangana">Telangana</option>
+								<option value="Tripura">Tripura</option>
+								<option value="Uttar Pradesh">Uttar Pradesh</option>
+								<option value="Uttrakhand">Uttrakhand</option>
+								<option value="West Bengal">West Bengal</option>
+							</select>
+						</div>
+					</div>
+					<div class="row m-t-10 text-center">
+						<div class="col-md-12">
+							<button type="submit" class="btn bluebtn finalregister">Register</button>
+						</div>
+					</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end register functionality --><!-- Modals : Register Mobile number Modal include End -->
+
+
+<!-- Modals : Open Book Modal include start -->
+<div class="modal" id="openbookmodel" tabindex="-1" role="dialog" aria-labelledby="openbookmodel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  bg-white" role="document">
+        <div class="modal-content">
+			<div class="modal-header modalheaderbg">
+				<h4 class="modal-title" style="width:100%;">
+					<span class="productname"></span>
+					<span class="pull-right" style="float: right;cursor:pointer;color:#fff;" data-dismiss="modal">
+						<i class="fa fa-times" aria-hidden="true"></i> 
+					</span>
+				</h4>
+			</div>
+            <div class="modal-body">
+                <form id="productpurchase">
+					<input type="hidden" name="itemid">
+                    <input type="hidden" name="itemtype" value="5">
+					<input type="hidden" name="price" value="">
+					<input type="hidden" name="totalprice" value="">
+					<input type="hidden" name="productname" value="">
+					<input type="hidden" name="productimg" value="">
+					<input type="hidden" name="productdesc" value="">
+                    <div class="modal-body">
+						<div class="row">
+							<div class="col-md-6">
+								<label>Name <span class="star">*</span></label>
+								<input type="text" class="form-control" name="name" placeholder="Enter Full Name" required="">
+							</div>
+							<div class="col-md-6">
+								<label>Email <span class="star">*</span></label>
+								<input type="email" class="form-control" name="email" placeholder="Enter Email" required="">
+							</div>
+							<div class="col-md-6  m-t-10">
+								<label>Phone Number <span class="star">*</span></label>
+								<input type="number" class="form-control" name="phone" placeholder="Enter Phone Number" required="">
+							</div>
+							<div class="col-md-6 m-t-10">
+								<label>Address <span class="star">*</span></label>
+								<input type="text" class="form-control" name="address" placeholder="Enter Address" required="">
+							</div>
+							<div class="col-md-6 m-t-10">
+								<label>City <span class="star">*</span></label>
+								<input type="text" class="form-control" name="city" placeholder="Enter City" required="">
+							</div>
+							<div class="col-md-6 m-t-10">
+								<label>State <span class="star">*</span></label>
+								<select name="state" class="form-control">
+									<option value="">Select</option>
+									<option value="Andman and Nicobar Islands">Andman and Nicobar Islands</option>
+									<option value="Andhra Pradesh">Andhra Pradesh</option>
+									<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+									<option value="Assam">Assam</option>
+									<option value="Bihar">Bihar</option>
+									<option value="Chandigarh">Chandigarh</option>
+									<option value="Chhattisgarh">Chhattisgarh</option>
+									<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+									<option value="Daman and Diu">Daman and Diu</option>
+									<option value="Delhi">Delhi</option>
+									<option value="Goa">Goa</option>
+									<option value="Gujarat">Gujarat</option>
+									<option value="Haryana">Haryana</option>
+									<option value="Himachal Pradesh">Himachal Pradesh</option>
+									<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+									<option value="Jharkhand">Jharkhand</option>
+									<option value="Karnataka">Karnataka</option>
+									<option value="Kashmir">Kashmir</option>
+									<option value="Kerala">Kerala</option>
+									<option value="Lakshadweep">Lakshadweep</option>
+									<option value="Madhya Pradesh">Madhya Pradesh</option>
+									<option value="Maharashtra">Maharashtra</option>
+									<option value="Manipur">Manipur</option>
+									<option value="Meghalaya">Meghalaya</option>
+									<option value="Mizoram">Mizoram</option>
+									<option value="Nagaland">Nagaland</option>
+									<option value="Orissa">Orissa</option>
+									<option value="Pondicherry">Pondicherry</option>
+									<option value="Punjab">Punjab</option>
+									<option value="Rajasthan">Rajasthan</option>
+									<option value="Sikkim">Sikkim</option>
+									<option value="Tamil Nadu">Tamil Nadu</option>
+									<option value="Telangana">Telangana</option>
+									<option value="Tripura">Tripura</option>
+									<option value="Uttar Pradesh">Uttar Pradesh</option>
+									<option value="Uttrakhand">Uttrakhand</option>
+									<option value="West Bengal">West Bengal</option>
+								</select>
+							</div>
+							<div class="col-md-6 m-t-10">
+								<label>Pin Code <span class="star">*</span></label>
+								<input type="number" class="form-control" name="pincode" placeholder="Enter PinCode" required="">
+							</div>
+							<div class="col-md-6 m-t-10">
+								<label>Quantity <span class="star">*</span></label>
+								<select name="qty" class="form-control" required="">
+																			<option value="1">1</option>
+																			<option value="2">2</option>
+																			<option value="3">3</option>
+																			<option value="4">4</option>
+																			<option value="5">5</option>
+																			<option value="6">6</option>
+																			<option value="7">7</option>
+																			<option value="8">8</option>
+																			<option value="9">9</option>
+																			<option value="10">10</option>
+																	</select>
+							</div>
+							<div class="col-md-12 m-t-10">
+								<div class="pricingsection">
+									<div class="row">
+									   <div class="col-md-6">
+											<h5>Price</h5>
+									   </div>
+									   <div class="col-md-6 text-right">
+											<h5 class="fntbld productprice">0</h5>
+									   </div>
+										<div class="col-md-6">
+											<h5>Shipping Price</h5>
+									   </div>
+									   <div class="col-md-6 text-right">
+											<h5 class="fntbld shippingprice">0</h5>
+									   </div>
+									   <div class="col-md-6">
+											<h5>Quantity</h5>
+									   </div>
+									   <div class="col-md-6 text-right">
+											<h5 class="fntbld productqty">1</h5>
+									   </div>
+									   <div class="col-md-6">
+											<h5>Total Price</h5>
+									   </div>
+									   <div class="col-md-6 text-right">
+											<h5 class="fntbld productfinalprice">0</h5>
+									   </div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 m-t-10 text-center">
+								<button type="submit" class="btn bluerounded productpurchase bluebtncommon">Create Order</button>
+							</div>
+						</div>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div><!-- Modals : Open Book Modal include End -->
+
+
+<!-- Modals : Login Register Modal include start -->
+<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg mymodel">
+		<div class="modal-content">
+			<div class="modal-body">
+				<link rel="stylesheet" href="https://main.apnikaksha.net/assets/css/login.css?v=2021-09-10 20:16:56">
+				<div class="login-reg-panel">
+					<div class="login-info-box">
+						<h2>Have an account?</h2>
+						<label id="label-register" for="log-reg-show">Login</label>
+						<input type="radio" name="active-log-panel" id="log-reg-show" checked="checked">
+					</div>
+
+					<div class="register-info-box my-info-box">
+						<h2>Don't have an account?</h2>
+						<label id="label-login" for="log-login-show">Register</label>
+						<input type="radio" name="active-log-panel" id="log-login-show">
+					</div>
+
+					<div class="white-panel">
+						<div class="login-show show-log-panel">
+							<h2>LOGIN</h2>
+							<form id="login">
+								<div class="row">
+									<div class="col-md-12">
+										<input class="form-control" name="email" type="text" placeholder="Email" required>
+									</div>
+									<div class="col-md-12">
+										<input class="form-control" name="password" type="password" placeholder="Password" required>
+									</div>
+									<div class="col-md-12">
+										<button type="submit" class="btn regloginbtn login">Login</button>
+										
+									</div>
+									<div class="col-md-12">
+										<a href="https://main.apnikaksha.net/reset">Forgot password?</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="register-show">
+							<h2>REGISTER</h2>
+							<form id="register_s">
+								<div class="row">
+									<div class="col-md-12">
+										<input type="email" class="form-control" name="email" placeholder="Email*" required>
+									</div>
+									<div class="col-md-12">
+										<input type="text" class="form-control" name="name" placeholder="Name*" required>
+									</div>
+									<div class="col-md-12">
+										<input type="text" class="form-control" name="phone" placeholder="Phone*" required>
+									</div>
+									<div class="col-md-12">
+										<input type="text" class="form-control" name="username" placeholder="Username*" required>
+									</div>
+									<div class="col-md-12">
+										<input type="password" class="form-control" name="password" placeholder="Password" required>
+									</div>
+									<div class="col-md-12">
+										<button type="submit" class="btn regloginbtn register_s">Register</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+<!-- Modals : Login Register Modal include End -->
+
+
+<!-- Modals : View pdf Modal include start -->
+<div class="modal" id="viewpdf" style="padding-top:0px !important;" tabindex="-1" role="dialog" aria-labelledby="viewpdf" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg bg-white" role="document">
+        <div class="modal-content" style="width:100%;">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+				<div style="text-align: center;" class="row nomrgn mypdfsdiv">
+					<!-- <div id="viewer" style='width: 100%; height: 600px; margin: 0 auto;'></div>-->
+						
+				</div>
+			</div>
+			<div class="modal-footer text-right" style="display:block;">
+				<button type="submit" class="btn btn-warning btnwt closemodel" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+    </div>
+</div><!-- Modals : View pdf Modal include End -->
+
+<!-- Modals : View pdf Modal include start -->
+<!-- start register functionality -->
+<div class="modal" id="loginnewmodal" tabindex="-1" role="dialog" aria-labelledby="openbookmodel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  bg-white" role="document">
+        <div class="modal-content">
+			<div class="modal-header modalheaderbg">
+				<h4 class="modal-title" style="width:100%;">
+					<span class="text-white">Login</span>
+					<span class="pull-right" style="float: right;cursor:pointer;color:#fff;" data-dismiss="modal">
+						<i class="fa fa-times" aria-hidden="true"></i> 
+					</span>
+				</h4>
+				
+			</div>
+            <div class="modal-body" style="padding: 30px;">
+				<form id="login">
+					<div class="row">
+						
+						<div class="col-md-12 m-b-20 m-t-15">
+							<input type="text" name="email" class="form-control inputcss" placeholder="Your Email or Mobile No" required="">
+						</div>
+						<div class="col-md-12 m-t-15">
+							<input type="password" name="password" class="form-control inputcss" placeholder="Your Password" required="">
+						</div>
+						
+					</div>
+					<div class="row m-t-15 text-center">
+						<div class="col-md-12">
+							<button type="submit" class="btn bluebtn login">Login</button>
+						</div>
+						<div class="col-md-12 m-t-15">
+							<a href="https://main.apnikaksha.net/reset" style="color: #2c2c96;">Forgot password?</a>
+						</div>
+					</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end register functionality --><!-- Modals : View pdf Modal include End -->
+
+<div class="row nomrgn p-0media footercolor">
+	<div class="container">
+		<div class="row m-t-20">
+			<div class="col-md-3 col-xs-12">
+				<img src="https://main.apnikaksha.net/assets/images/client/apnikaksha/Logo3.svg" style="position: relative;max-width: 230px;">
+				<p class="letterspace1" style="margin-top:12px;"></p>
+			</div>
+			<div class="col-md-3 col-xs-12 quicklink">
+				<div><h3>Contact</h3></div>
+				<div><hr class="primdishfooter"></div>
+				<div class="lnhgt-25">support@apnikaksha.net</div>
+			</div>		
+			<div class="col-md-3 col-xs-12 quicklink">
+				<div><h3>Important Links</h3></div>
+				<div><hr class="primdishfooter"></div>
+				<div class="lnhgt-25 hoverquicklink"><i class="fa fa-angle-right"></i> &nbsp;&nbsp;<a href="https://main.apnikaksha.net/terms">Terms</a></div>
+				<div class="lnhgt-25 hoverquicklink"><i class="fa fa-angle-right"></i> &nbsp;&nbsp;<a href="https://main.apnikaksha.net/privacy">Privacy Policy</a></div>
+									<div class="lnhgt-25 hoverquicklink"><i class="fa fa-angle-right"></i> &nbsp;&nbsp;<a href="https://main.apnikaksha.net/refund">Refund/Cancellation Policy</a></div>
+							</div>		
+			<div class="col-md-3 col-xs-12">
+				<div><h3>Download App</h3></div>
+				<div><hr class="primdishfooter"></div>
+				<div><a href="https://play.google.com/store/apps/details?id=com.apni.kaksha"><img class="googlefooterimg" src="https://main.apnikaksha.net/assets/images/googleplay.png" width="100%"></a></div>
+							</div>			
+		</div>
+		<div><hr class="footerhr"></div>
+		<div class="row text-center">
+			<p style="color: #c5c5c5;letter-spacing: 1px;">Project by Samarth</p>							
+		</div>
+	</div>
+</div>
+
+<div id="adobe-dc-view"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.2.2/pdf.js"></script>
+<script src="https://main.apnikaksha.net/assets/js/pdfjs/lib/webviewer.min.js"></script>
+<script type="text/javascript" src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+<!-- js : Common js include start -->
+
+<script>
+	$(document).ready(function() {
+		if($('.read-more-150').height()>150){
+			$('.read-more-150').addClass('max-height-150 text-truncate2');
+			$('.read-more-150').after('<div class=" read-more-text text-white"> &nbsp;&nbsp;<a href="javasscript:void(0)" class="text-white">..Read more</a></div>');
+		}
+		$('body').on('click','.read-more-text',function(){
+			$(this).parent().find('.read-more-150').removeClass('max-height-150 text-truncate2');
+			$(this).remove();
+		})
+	})
+    if (typeof getcategory !== 'undefined') {
+        // the variable is defined
+    }else{
+        getcategory='';
+    }
+
+
+    // livelearn
+    function convertToSlug(Text)
+	{
+		return Text.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'');
+	}
+    var allcourses = JSON.parse(coursesall);
+	var availableTags = [];
+	for(var i=0;i<allcourses.length;i++){
+		availableTags.push({'label': allcourses[i].course_name, 'value': allcourses[i].course_name})
+	}
+    if ($(".searchcoursebox").length > 0) {
+        $( ".searchcoursebox" ).autocomplete({
+            source: availableTags,
+            matchContains: "word",
+            autoFill: true,
+            select: function (event, ui) {
+                var label = ui.item.label;
+                var value = ui.item.value;
+                
+                
+                location.href=baseurl+"courses/"+convertToSlug(label);
+            }
+        });
+    }
+    // livelearn
+
+
+    function getOS() {
+		var userAgent = window.navigator.userAgent,
+			platform = window.navigator.platform,
+			macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+			windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+			iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+			os = null;
+
+		if (macosPlatforms.indexOf(platform) !== -1) {
+			os = 'Mac OS';
+		} else if (iosPlatforms.indexOf(platform) !== -1) {
+			os = 'iOS';
+		} else if (windowsPlatforms.indexOf(platform) !== -1) {
+			os = 'Windows';
+		} else if (/Android/.test(userAgent)) {
+			os = 'Android';
+		} else if (!os && /Linux/.test(platform)) {
+			os = 'Linux';
+		}
+
+		return os;
+	}
+	function stringdecrypt(link){
+		var retlink=''
+		$.ajax({
+			url: 'https://main.apnikaksha.net/pages/decrypt',
+			type: 'POST',
+			data:'link='+encodeURIComponent(link),
+			async:false,
+			success: function(resp) {
+				retlink=resp;
+			}
+		});
+		return retlink;
+	}
+	function getquality(media_id){
+		let myurl='';
+		myurl='myurl=https://cdn.jwplayer.com/manifests/'+stringdecrypt(media_id)+'.m3u8';
+		
+		let retarr=[];
+		$.ajax({
+			url: 'https://main.apnikaksha.net/pages/fetchquality',
+			type: 'GET',
+			data:myurl,
+			async:false,
+			beforeSend: function() {
+				$(".pleasewait").attr('style','display:block');
+			},
+			success: function(resp) {
+				retarr=JSON.parse(resp).data;
+			}
+		});
+		return retarr;
+	}
+	function getqualitylive(directurl){
+		let myurl='';
+		myurl='myurl='+directurl;
+		
+		let retarr=[];
+		$.ajax({
+			url: 'https://main.apnikaksha.net/pages/fetchqualitylive',
+			type: 'GET',
+			data:myurl,
+			async:false,
+			beforeSend: function() {
+				$(".pleasewait").attr('style','display:block');
+			},
+			success: function(resp) {
+				retarr=JSON.parse(resp).data;
+			}
+		});
+		return retarr;
+	}
+	function sethlspagesssion(object,media_id){
+		let obj={};
+		obj['data']=object;
+		obj['media_id']=stringdecrypt(media_id);
+		$.ajax({
+			url: 'https://main.apnikaksha.net/pages/hlssession',
+			type: 'POST',
+			data:JSON.stringify(obj),
+			contentType: "application/json",
+			dataType: "json",
+			async:false,
+			success: function(resp) {
+				console.log('success');
+			},
+			complete: function(resp) {
+				console.log('complete');
+			},
+		});
+	}
+	function sethlsurlpagesssion(media_id,videourl){
+		let obj={};
+		obj['media_id']=media_id;
+		obj['videourl']=videourl;
+		$.ajax({
+			url: 'https://main.apnikaksha.net/pages/hlssessionurl',
+			type: 'POST',
+			data:JSON.stringify(obj),
+			contentType: "application/json",
+			dataType: "json",
+			async:false,
+			success: function(resp) {
+				
+			}
+		});
+	}
+	function stringencrypt(link){
+		var retlink=''
+		$.ajax({
+			url: 'https://main.apnikaksha.net/pages/encrypt',
+			type: 'POST',
+			data:'link='+encodeURIComponent(link),
+			async:false,
+			success: function(resp) {
+				retlink=resp;
+			}
+		});
+		return retlink;
+	}
+	const viewerConfig = {
+		embedMode: "LIGHT_BOX",
+		showDownloadPDF: Boolean(Number(1)),
+		showPageControls: true,
+		dockPageControls: false,
+		showPrintPDF:false,
+		defaultViewMode:'FIT_WIDTH',
+		allowTextSelection: false
+	};
+	var firebaseconfigjson='{"apiKey":"AIzaSyBrVN-JEAs6B-mZ9ozXySfGQUKK8n4iToM","authDomain":"appx-b76a1.firebaseapp.com","firebaseurl":"https:\/\/apnikakshaappx.firebaseio.com\/","projectId":"appx-b76a1","storageBucket":"appx-b76a1.appspot.com","messagingSenderId":"1043124818557","appId":"1:1043124818557:web:4d80df53e0338a31655714","measurementId":"G-EZP3WD708D"}';
+	var firebaseConfig1 = {
+		apiKey: JSON.parse(firebaseconfigjson).apiKey,
+		authDomain: JSON.parse(firebaseconfigjson).authDomain,
+		databaseURL: JSON.parse(firebaseconfigjson).firebaseurl,
+		projectId: JSON.parse(firebaseconfigjson).projectId,
+		storageBucket: JSON.parse(firebaseconfigjson).storageBucket,
+		messagingSenderId: JSON.parse(firebaseconfigjson).messagingSenderId,
+		appId: JSON.parse(firebaseconfigjson).appId,
+		measurementId: JSON.parse(firebaseconfigjson).measurementId
+	};
+
+
+
+    $(document).ready(function() {
+        firebase.initializeApp(firebaseConfig1);
+		if(sessionStorage.getItem("windowName") && parseInt()){
+			firebase.database().ref('weblogins').child(sessionStorage.getItem("userId")).on('value',function(data){
+					if(data.val() != sessionStorage.getItem("windowName")) {
+						logout();
+					} 
+			});
+		}
+		var stickyheader = '';
+		var clientid = '976f7c0a540640f28414039bcf00e1f7';
+		var downloadpdfenable='1';
+		var base_url='https://main.apnikaksha.net/';
+		var showsubexampage='';
+		var showemailpassfornewlogin =  '1'
+
+        function getappcatname(catid){
+			var appcategoryarr=JSON.parse(appcategory);
+			var appcatdata=appcategoryarr.filter(w => w.id == catid)[0];
+			return appcatdata.name;
+		}
+		if(getcategory==''){
+			$('.closebtnmodel').hide();
+			$('#opencategorymodel').modal({
+			   backdrop: 'static',
+			   keyboard: false
+			});
+		}else{
+			$('.yellowbtntop').html(getappcatname(getcategory)+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-down"></i>');
+		}
+		if(stickyheader){
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 120) {
+					$('.header-top').addClass('fixed');
+				} else {
+					$('.header-top').removeClass('fixed');
+				}
+			});
+		}
+		
+		$('body').on('click','.loginregisterclass',function(){
+			$('#registermobno').find('#registermobnomobile').removeClass('hide');
+			$('#registermobno').find('#registermobnomobile').find('input[name=phone]').val();
+			$('#registermobno').find('#otponombile').addClass('hide');
+			$('#registermobno').find('#finalregister').addClass('hide');
+		});
+        $('body').on('click','.categoryinner',function(){
+			$('.categoryinner').removeClass('categoryinneractive');
+			$(this).addClass('categoryinneractive');
+			var catid=$(this).attr('attr-id');
+			var catname=$(this).attr('attr-name');
+			$('#categoryselectform').find('input[name=categoryid]').val(catid);
+		});
+		$('body').on('click','.yellowbtntop',function(){
+			$('#categoryselectform').find('input[name=categoryid]').val(localStorage.getItem("appcategoryid"));
+			$('.categoryinner[attr-id='+getcategory+']').addClass('categoryinneractive');
+			$('.closebtnmodel').show();
+			$('#opencategorymodel').modal({});
+		});
+        $('body').on('submit','#categoryselectform',function(e){
+			e.preventDefault();
+			if($('#categoryselectform').find('input[name=categoryid]').val()==""){
+				alert("Select Category");
+			}else{
+				//send ajax to set cookie
+				$.ajax({
+					url: base_url+"pages/setcookies",
+					type: 'POST',
+					async:false,
+					data: {
+						appcategoryid : $('#categoryselectform').find('input[name=categoryid]').val(),
+					},
+					success: function(data) {
+					},
+					error: function(e) {
+						
+					}
+				})
+				var user_id = $('#userId').val();
+				var user_token = $('#userToken').val();
+				if(typeof user_id!="undefined"){
+					$.ajax({
+						url: "https://apnikakshaapi.teachx.in/post/update_user_app_category",
+						type: 'POST',
+						async:false,
+						"headers": {
+							"auth-key": "appxapi",
+							"client-service": "Appx",
+							"User-ID": "33715",
+							"Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMzNzE1IiwiZW1haWwiOiJzYW1hcnRoczQ0OUBnbWFpbC5jb20iLCJ0aW1lc3RhbXAiOjE2MzEzMDUwMTZ9.BRBpPPrxYdcZ63fris2-6A8tLUtX8yV03f07HGq43as"
+						},
+						data: {
+							userid : user_id,
+							app_category : $('#categoryselectform').find('input[name=categoryid]').val(),
+						},
+						success: function(data) {
+							location.reload();
+						},
+						error: function(e) {
+							alert('Error : unable to update category');
+						}
+					})
+				}else{
+					location.reload();
+				}
+			}
+		});
+
+        $('body').on('submit','#registermobnomobile',function(e){
+			e.preventDefault();
+			$('#registermobno').find('#finalregister').find('input[name=phone]').val($('#registermobno').find('input[name=phone]').val());
+			$.ajax({
+				url: "https://apnikakshaapi.teachx.in/get/sendotp",
+				type: 'GET',
+				data: {
+					phone:$('#registermobno').find('input[name=phone]').val()
+				},
+				"headers": {
+					"auth-key": "appxapi",
+					"client-service": "Appx",
+					"User-ID": "33715",
+					"Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMzNzE1IiwiZW1haWwiOiJzYW1hcnRoczQ0OUBnbWFpbC5jb20iLCJ0aW1lc3RhbXAiOjE2MzEzMDUwMTZ9.BRBpPPrxYdcZ63fris2-6A8tLUtX8yV03f07HGq43as"
+				},
+				success: function(data) {
+					$('#registermobno').find('#registermobnomobile').addClass('hide');
+					$('#registermobno').find('#otponombile').removeClass('hide');
+				},
+				error: function(e) {
+					alert('Error : Something Went Wrong');
+				}
+			})
+		});
+
+		$('body').on('submit','#otponombile',function(e){
+			e.preventDefault();
+			$.ajax({
+				url: "https://apnikakshaapi.teachx.in/get/otpverify",
+				type: 'GET',
+				data: {
+					useremail:$('#registermobnomobile').find('input[name=phone]').val(),
+					otp:$('#otponombile').find('input[name=otp]').val(),
+				},
+				"headers": {
+					"auth-key": "appxapi",
+					"client-service": "Appx",
+					"User-ID": "33715",
+					"Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMzNzE1IiwiZW1haWwiOiJzYW1hcnRoczQ0OUBnbWFpbC5jb20iLCJ0aW1lc3RhbXAiOjE2MzEzMDUwMTZ9.BRBpPPrxYdcZ63fris2-6A8tLUtX8yV03f07HGq43as"
+				},
+				success: function(data) {
+					if(data.status==200){
+						if(data.user.name=="User" || data.user.name==""){
+							var comingdata=JSON.stringify(data);
+							$('#registermobno').find('#otponombile').addClass('hide');
+							$('#registermobno').find('#finalregister').removeClass('hide');
+							$('#registermobno').find('#finalregister').find('input[name=useridinside]').val(data.user.userid);
+							$('#registermobno').find('#finalregister').find('input[name=fulljson]').val(comingdata);
+						}else{
+							var comingdata=JSON.stringify(data);
+							//all set to tlogin
+							$.ajax({
+								url: base_url+"pages/setloginsession",
+								type: 'POST',
+								data:{
+									fulldata:comingdata
+								},
+								async:false,
+								success: function(data) {
+									location.reload();
+								},
+								error: function(e) {
+									alert('Error : Something Went Wrong');
+								}
+							});
+						}
+						
+					}else{
+						alert('Invalid OTP Entered');
+					}
+				},
+				error: function(e) {
+					alert('Error : Something Went Wrong');
+				}
+			})
+		});
+
+		$('body').on('submit','#finalregister',function(e){
+			e.preventDefault();
+			if(showemailpassfornewlogin){
+				$.ajax({
+					url: "https://apnikakshaapi.teachx.in/post/update_profilev2",
+					type: 'POST',
+					data: {
+						phone:$('#finalregister').find('input[name=phone]').val(),
+						userid:$('#finalregister').find('input[name=useridinside]').val(),
+						name:$('#finalregister').find('input[name=name]').val(),
+						email:$('#finalregister').find('input[name=email]').val(),
+						password:$('#finalregister').find('input[name=password]').val(),
+					},
+					"headers": {
+						"auth-key": "appxapi",
+						"client-service": "Appx",
+						"User-ID": "33715",
+						"Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMzNzE1IiwiZW1haWwiOiJzYW1hcnRoczQ0OUBnbWFpbC5jb20iLCJ0aW1lc3RhbXAiOjE2MzEzMDUwMTZ9.BRBpPPrxYdcZ63fris2-6A8tLUtX8yV03f07HGq43as"
+					},
+					success: function(data) {
+						if(data.status==200){
+							var jsondata=$('#registermobno').find('#finalregister').find('input[name=fulljson]').val();
+							var parsedjson=JSON.parse(jsondata);
+							parsedjson.user.name=$('#finalregister').find('input[name=name]').val();
+							parsedjson.user.email=$('#finalregister').find('input[name=email]').val();
+							var againjson=JSON.stringify(parsedjson);
+							$.ajax({
+								url: base_url+"pages/setloginsession",
+								type: 'POST',
+								data:{
+									fulldata:againjson
+								},
+								async:false,
+								success: function(data) {
+									location.reload();
+								},
+								error: function(e) {
+									alert('Error : Something Went Wrong');
+								}
+							});
+						}else{
+							alert(data.msg);
+						}
+					},
+					error: function(e) {
+						alert('Error : Something Went Wrong');
+					}
+				})
+			}else{
+				$.ajax({
+					url: "https://apnikakshaapi.teachx.in/post/update_profile",
+					type: 'POST',
+					data: {
+						phone:$('#finalregister').find('input[name=phone]').val(),
+						userid:$('#finalregister').find('input[name=useridinside]').val(),
+						name:$('#finalregister').find('input[name=name]').val(),
+					},
+					"headers": {
+						"auth-key": "appxapi",
+						"client-service": "Appx",
+						"User-ID": "33715",
+						"Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMzNzE1IiwiZW1haWwiOiJzYW1hcnRoczQ0OUBnbWFpbC5jb20iLCJ0aW1lc3RhbXAiOjE2MzEzMDUwMTZ9.BRBpPPrxYdcZ63fris2-6A8tLUtX8yV03f07HGq43as"
+					},
+					success: function(data) {
+						if(data.status==200){
+							var jsondata=$('#registermobno').find('#finalregister').find('input[name=fulljson]').val();
+							var parsedjson=JSON.parse(jsondata);
+							parsedjson.user.name=$('#finalregister').find('input[name=name]').val();
+							var againjson=JSON.stringify(parsedjson);
+							$.ajax({
+								url: base_url+"pages/setloginsession",
+								type: 'POST',
+								data:{
+									fulldata:againjson
+								},
+								async:false,
+								success: function(data) {
+									location.reload();
+								},
+								error: function(e) {
+									alert('Error : Something Went Wrong');
+								}
+							});
+						}else{
+							alert(data.msg);
+						}
+					},
+					error: function(e) {
+						alert('Error : Something Went Wrong');
+					}
+				})
+			}
+			
+		});
+        $('body').on('click','.applybtn',function(){
+			$('#applynow').modal('show');
+		});
+		$('body').on('click','.openlink',function(){
+			var urls=stringdecrypt($(this).attr('attr-link'));
+			//if(downloadpdfenable){
+				//window.open(urls, '_blank').focus();
+			//}else{
+				/* Initialize the AdobeDC View object */
+				var adobeDCView = new AdobeDC.View({
+					/* Pass your registered client id */
+					clientId: clientid
+				});
+				
+				/* Invoke the file preview API on Adobe DC View object */
+				var previewFilePromise = adobeDCView.previewFile({
+					/* Pass information on how to access the file */
+					content: {
+						/* Location of file where it is hosted */
+						location: {
+							url: urls+"?dl=0",
+							//If the file URL requires some additional headers, then it can be passed as follows:-
+							/*
+							header: [
+								{
+									key: "access-control-allow-origin",
+									value: "*",
+								}
+							]
+							*/
+						},
+					},
+					/* Pass meta data of file */
+					metaData: {
+						/* file name */
+						fileName: "Course.pdf"
+					}
+				}, viewerConfig);
+				const allowTextSelection = false;
+				previewFilePromise.then(adobeViewer => {
+						adobeViewer.getAPIs().then(apis => {
+								apis.enableTextSelection(allowTextSelection)
+										.then(() => console.log("Success"))
+										.catch(error => console.log(error));
+						});
+				});
+			//}
+		});
+
+        $('body').on('change','#openbookmodel select[name=qty]',function(){
+			var qty=$(this).val();
+			var price=$('#openbookmodel input[name=price]').val();
+			var totalprice=qty*price;
+			$('#openbookmodel input[name=totalprice]').val(totalprice);
+			$('#openbookmodel .productqty').html(qty);
+			$('#openbookmodel .productfinalprice').html("₹ "+totalprice);
+		});
+		
+		$('body').on('click','.openbookmodel',function(){
+			var fulldata=JSON.parse($(this).attr('attr-fulldata'));
+			$('#openbookmodel .productname').html(fulldata.title);
+			$('#openbookmodel input[name=itemid]').val(fulldata.id);
+			$('#openbookmodel input[name=price]').val(fulldata.price);
+			$('#openbookmodel input[name=totalprice]').val(fulldata.price);
+			$('#openbookmodel input[name=productname]').val(fulldata.title);
+			$('#openbookmodel input[name=productimg]').val(fulldata.image);
+			$('#openbookmodel input[name=productdesc]').val(fulldata.description);
+			$('#openbookmodel select[name=qty]').val('1');
+			$('#openbookmodel .productprice').html("₹ "+fulldata.price_without_shipping);
+			$('#openbookmodel .shippingprice').html("₹ "+fulldata.shipping_price);
+			$('#openbookmodel .productqty').html('1');
+			$('#openbookmodel .productfinalprice').html("₹ "+fulldata.price);
+			$('#openbookmodel').modal({
+			   backdrop: 'static',
+			   keyboard: false
+			})
+		});	
+
+		$('#productpurchase').on('submit',function(e){
+			e.preventDefault();
+			 var user_id = $('#userId').val();
+			 var user_token = $('#userToken').val();
+			 var phone= $('#productpurchase').find('input[name=phone]').val();
+			 var email= $('#productpurchase').find('input[name=email]').val();
+			 var pincode= $('#productpurchase').find('input[name=pincode]').val();
+			 var statetext= $('#productpurchase').find('select[name=state]').val();
+			 var city= $('#productpurchase').find('input[name=city]').val();
+			 var address= $('#productpurchase').find('input[name=address]').val();
+			 var quantitytext= $('#productpurchase').find('select[name=qty]').val();
+			 var product_id= $('#productpurchase').find('input[name=itemid]').val();
+			 if (!user_id) {
+				$('#myModal').modal('show');
+			 } else {
+				var acualPrice = $('#productpurchase').find('input[name=totalprice]').val();
+				var order_id = null;
+				var itemid = $('#productpurchase').find('input[name=itemid]').val();
+				var product_name =  $('#productpurchase').find('input[name=productname]').val();
+				var product_img =  $('#productpurchase').find('input[name=productimg]').val();
+				var product_desc = $('#productpurchase').find('input[name=productdesc]').val();
+				$.ajax({
+					url: "https://apnikakshaapi.teachx.in/post/createOrderv2",
+					type: 'POST',
+					async:false,
+					"headers": {
+						"auth-key": "appxapi",
+						"client-service": "Appx",
+						"User-ID": "33715",
+						"Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMzNzE1IiwiZW1haWwiOiJzYW1hcnRoczQ0OUBnbWFpbC5jb20iLCJ0aW1lc3RhbXAiOjE2MzEzMDUwMTZ9.BRBpPPrxYdcZ63fris2-6A8tLUtX8yV03f07HGq43as"
+					},
+					data: {
+						userid : user_id,
+						itemid : itemid,
+						itemtype : 5,
+						coupon_code : '',//when coupon code apply give it here
+					},
+					success: function(data) {
+						order_id = data.order_id;
+						acualPrice=data.amount;
+					},
+					error: function(e) {
+						
+					}
+				})
+				var notesarr={};
+				notesarr['base_url']='https://apnikakshaapi.teachx.in/';
+				notesarr['user_id']=user_id;
+				notesarr['item_type']="5";
+				notesarr['item_id']=itemid;
+				notesarr['amount']=acualPrice* 100;
+				notesarr['email']=email;
+				notesarr['phone']=phone;
+				notesarr['city']=city;
+				notesarr['state']=statetext;
+				notesarr['address']=address;
+				notesarr['pincode']=pincode;
+				notesarr['quantity']=quantitytext;
+				notesarr['phone_number_2']='';
+				notesarr['post_office']='';
+				notesarr['care_of']='';
+				var options = {
+					"key": "rzp_live_7UWftg0tVwA7MI",
+					"amount": (acualPrice * 100), // 2000 paise = INR 20
+					"order_id":order_id,
+					"name": product_name,
+					"description": product_desc,
+					"image": product_img,
+					"payment_capture": 1,
+					"notes":notesarr,
+					"modal": {
+						"ondismiss": function() {
+							$.ajax({
+								url: "https://apnikakshaapi.teachx.in/post/insertleadsdata",
+								type: 'POST',
+								"headers": {
+									"auth-key": "appxapi",
+									"client-service": "Appx",
+									"User-ID": "33715",
+									"Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMzNzE1IiwiZW1haWwiOiJzYW1hcnRoczQ0OUBnbWFpbC5jb20iLCJ0aW1lc3RhbXAiOjE2MzEzMDUwMTZ9.BRBpPPrxYdcZ63fris2-6A8tLUtX8yV03f07HGq43as"
+								},
+								data: {
+									userid: user_id,
+									itemid: itemid ,
+									itemtype: 5,
+                            		Source: 'Web'
+								},
+								success: function(data) {
+								},
+								error: function(e) {
+									
+								}
+							})
+						}
+					},
+					"handler": function(response) {
+						$.ajax({
+							url: 'https://apnikakshaapi.teachx.in/post/purchaseapiv5',
+							//url: 'http://localhost/education-app-api/post/purchaseapiv5',
+							type: 'post',
+							"headers": {
+									"auth-key": "appxapi",
+									"client-service": "Appx",
+									"User-ID": "33715",
+									"Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMzNzE1IiwiZW1haWwiOiJzYW1hcnRoczQ0OUBnbWFpbC5jb20iLCJ0aW1lc3RhbXAiOjE2MzEzMDUwMTZ9.BRBpPPrxYdcZ63fris2-6A8tLUtX8yV03f07HGq43as"
+							},
+							dataType: 'json',
+							data: {
+								userid: user_id,
+								itemid: itemid,
+								transactionid: response.razorpay_payment_id,
+								//transactionid: 'tets entry',
+								user_token: user_token,
+								itemtype: 5,
+								amount: acualPrice * 100
+							},
+							success: function(msg) {
+								if (msg.status == 200) {
+									var purchaseid=msg.data;
+									$.ajax({
+										url: 'https://apnikakshaapi.teachx.in/post/submit_order',
+										//url: 'http://localhost/education-app-api/post/submit_order',
+										type: 'post',
+										"headers": {
+												"auth-key": "appxapi",
+												"client-service": "Appx",
+												"User-ID": "33715",
+												"Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMzNzE1IiwiZW1haWwiOiJzYW1hcnRoczQ0OUBnbWFpbC5jb20iLCJ0aW1lc3RhbXAiOjE2MzEzMDUwMTZ9.BRBpPPrxYdcZ63fris2-6A8tLUtX8yV03f07HGq43as"
+										},
+										dataType: 'json',
+										data: {
+											user_id: user_id,
+											phone: phone,
+											email: email,
+											pincode: pincode,
+											state: statetext,
+											city:city,
+											address:address,
+											product_id:product_id,
+											color: '',
+											size: '',
+											quantity: quantitytext,
+											purchase_id: purchaseid,
+										},
+										success: function(msg) {
+											if (msg.status == 200) {
+												alert('Order Placed Successfully');
+												location.reload();
+											}
+										},
+										error: function(e) {
+											;
+										}
+									});
+								}
+							},
+							error: function(e) {
+								;
+							}
+						});
+					},
+					"theme": {
+						"color": "#528FF0"
+					}
+				};
+				var rzp1 = new Razorpay(options);
+				rzp1.open();
+				e.preventDefault();
+			}
+		});
+
+		function getsubexamscat(examcatname){
+			var coursearr=JSON.parse(coursesall);
+			var allcoursesbyexamcat=coursearr.filter(w => w.exam_category == examcatname);
+			
+			return allcoursesbyexamcat;
+		}
+		function getcoursesbysubexamscat(examsubcatname){
+			var coursearr=JSON.parse(coursesall);
+			var allcoursesbyexamsubcat=coursearr.filter(w => w.sub_exam_category == examsubcatname);
+			
+			return allcoursesbyexamsubcat;
+		}
+
+
+		function slugify(Text) {
+			var slug = $.trim(Text)
+			return slug
+				.toLowerCase()
+				.replace('/', '-') 
+				.replace(/ /g, '-')
+				.replace(',','-')
+				.replace(/[^\w-]+/g, '')
+				.replace(/-{2,}/g, '-');
+			
+		}
+		
+		$(document).on('click', function() {
+			$("#myNavbar ul #examsubcatweb").hide();
+			$("#myNavbar ul #courseexamwise").hide();
+		});
+		
+		$('.paidcoursea').on('click',function(){
+			if($('.mynewmenu').attr('attr-stat')=="hide"){
+				$('.mynewmenu').slideDown();
+				$('.mynewmenu').attr('attr-stat','open');
+			}else{
+				$('.mynewmenu').slideUp();
+				$('.mynewmenu').attr('attr-stat','hide')
+			}
+		});
+		//mobile subcat show
+		$('body').on('click','.examcathovermob',function(){
+			var d=$(this);
+			var examcat=$(this).attr('attr-examcat');
+			$('#examsubcatweb').html('');
+			var examsubcat=getsubexamscat(examcat);
+			var examsubcathtml='';
+			var examsubcatarr=[];
+			$(examsubcat).each(function(i,e){
+				if(examsubcatarr.indexOf(e.sub_exam_category)==-1){
+					if(showsubexampage){
+						examsubcathtml+='<li><a class="examsubcathovermob" attr-open="false" attr-examsubcat="'+e.sub_exam_category+'" href="'+base_url+'course/'+e.subexamslugify+'">'+e.sub_exam_category+' <span class="pull-right"><i class="fa fontclass2 fa-plus"></i></span></a></li>';
+					}else{
+						examsubcathtml+='<li><a class="examsubcathovermob" attr-open="false" attr-examsubcat="'+e.sub_exam_category+'" href="javascript:void(0);">'+e.sub_exam_category+' <span class="pull-right"><i class="fa fontclass2 fa-plus"></i></span></a></li>';
+					}
+					examsubcatarr.push(e.sub_exam_category);
+				}
+			});
+			examsubcathtml+='';
+			d.closest('li').find('.examsubcatul').html(examsubcathtml);
+			var openclose=$(this).attr('attr-openclose');
+			if(openclose=="close"){
+				$(this).find('.fontclass1').removeClass('fa-plus');
+				$(this).find('.fontclass1').addClass('fa-minus');
+				$(this).attr('attr-openclose','open');
+				d.closest('li').find('.examsubcatul').slideDown();
+			}else{
+				$(this).find('.fontclass1').removeClass('fa-minus');
+				$(this).find('.fontclass1').addClass('fa-plus');
+				$(this).attr('attr-openclose','close');
+				d.closest('li').find('.examsubcatul').slideUp();
+			}
+		});
+		$('body').on('click','.examsubcathovermob',function(){
+			var d=$(this);
+			
+			var examsubcat=$(this).attr('attr-examsubcat');
+			var filteredcourses=getcoursesbysubexamscat(examsubcat);
+			var courseshtml='<ul class="courseul">';
+			$(filteredcourses).each(function(i,e){
+				var slug=e.course_slug;
+				courseshtml+='<li><a href="'+base_url+'courses/'+slug+'">'+e.course_name+'</a></li>';
+			});
+			courseshtml+='</ul>';
+			//alert(courseshtml);
+			if($(this).attr('attr-open')=='false'){
+				$(this).find('.fontclass2').removeClass('fa-minus');
+				$(this).find('.fontclass2').addClass('fa-plus');
+				$(this).attr('attr-open','true');
+				d.find('ul').remove();
+				//d.find('.examsubcatul').slideDown();
+			}else{
+				$(this).find('.fontclass2').removeClass('fa-plus');
+				$(this).find('.fontclass2').addClass('fa-minus');
+				$(this).attr('attr-open','false');
+				d.append(courseshtml);
+				//d.find('.examsubcatul').slideDown();
+			}
+			
+			
+		});
+		
+		$('body').on('mouseover','.examcathover',function(){
+			var examcat=$(this).attr('attr-examcat');
+			$('#examsubcatweb').html('');
+			var examsubcat=getsubexamscat(examcat);
+			var examsubcathtml='';
+			var examsubcatarr=[];
+			$(examsubcat).each(function(i,e){
+				if(examsubcatarr.indexOf(e.sub_exam_category)==-1){
+					if(showsubexampage){
+						examsubcathtml+='<li class="examsubcathover" attr-examsubcat="'+e.sub_exam_category+'"><a href="'+base_url+'course/'+e.subexamslugify+'"">'+e.sub_exam_category+' <span class="pull-right"><i class="fa fa-angle-right"></i></span></a></li>';
+					}else{
+						examsubcathtml+='<li class="examsubcathover" attr-examsubcat="'+e.sub_exam_category+'"><a href="javascript:void(0);">'+e.sub_exam_category+' <span class="pull-right"><i class="fa fa-angle-right"></i></span></a></li>';
+					}
+					examsubcatarr.push(e.sub_exam_category);
+				}
+			});
+			$('#courseexamwise').html('');
+			$('#examsubcatweb').css('display','block');
+			$('#courseexamwise').css('display','none');
+			$('#examsubcatweb').html(examsubcathtml);
+		});
+		
+		$('body').on('mouseover','.examsubcathover',function(){
+			var examsubcat=$(this).attr('attr-examsubcat');
+			var filteredcourses=getcoursesbysubexamscat(examsubcat);
+			var courseshtml='';
+			$(filteredcourses).each(function(i,e){
+				var slug=e.course_slug;
+				courseshtml+='<li><a href="'+base_url+'courses/'+slug+'">'+e.course_name+'</a></li>';
+			});
+
+			$('#courseexamwise').css('display','block');
+			$('#courseexamwise').html(courseshtml);
+		});
+		
+		$('body').on('click','.subcourseexam',function(){
+			var examcat=$(this).attr('attr-examcat');
+			if($(this).html()=="-"){
+				$(this).parents('.examcatmob').find('a .insideulexamcat').remove();
+				$(this).html('+');
+			}else{
+				var examsubcat=getsubexamscat(examcat);
+				var examsubcathtml='';
+				var examsubcatarr=[];
+				$(examsubcat).each(function(i,e){
+					if(examsubcatarr.indexOf(e.sub_exam_category)==-1){
+						examsubcathtml+='<ul class="insideulexamcat"><li><div class="subcourseexamcatdiv"><a href="javascript:void(0);">'+e.sub_exam_category+' <span class="subcourseexamcat" attr-examsubcat="'+e.sub_exam_category+'" href="javascript:void(0);">+</span></a></div></li></ul>';
+						examsubcatarr.push(e.sub_exam_category);
+					}
+				});
+				$(this).parent('.examcatmob a').append(examsubcathtml);
+				$(this).html('-');
+			}
+		});
+		$('body').on('click','.subcourseexamcat',function(){
+			if($(this).html()=="-"){
+				$(this).parents('.subcourseexamcatdiv').find('a .insideulexamcourse').remove();
+				$(this).html('+');
+			}else{
+				var examsubcat=$(this).attr('attr-examsubcat');
+				var filteredcourses=getcoursesbysubexamscat(examsubcat);
+				var courseshtml='';
+				
+				$(filteredcourses).each(function(i,e){
+					var slug=slugify(e.course_name);
+					courseshtml+='<div class="insideulexamcourse"><a href="'+base_url+'courses/'+slug+'">'+e.course_name+'</a></div>';
+				});
+				$(this).parent('.subcourseexamcatdiv a').append(courseshtml);
+				$(this).html('-');
+			}
+		});
+		if($('.testimonial-carousel').length>0){
+			$(".testimonial-carousel").slick({
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: false,
+				arrows: false,
+				dots: true,
+			});
+		}
+		if($('.bookslider').length>0){
+			$('.bookslider').slick({
+			  infinite: true,
+			  slidesToShow: 4,
+			  slidesToScroll: 4,
+			  autoplay: true,
+			  arrows: true,
+			  dots: false,
+			  responsive: [
+				{
+				  breakpoint: 768,
+				  settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					dots: false,
+					autoplay: true,
+					arrows: false,
+					infinite: true,
+					cssEase: 'linear'
+				  }
+				},
+				{
+				  breakpoint: 480,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: false,
+					autoplay: true,
+					arrows: false,
+					infinite: true,
+					cssEase: 'linear'
+				  }
+				}
+			  ]
+			});
+		}
+		if($('.productslider').length>0){
+			$('.productslider').slick({
+			  infinite: true,
+			  slidesToShow: 4,
+			  slidesToScroll: 4,
+			  pauseOnHover:true,
+			  autoplay: true,
+			  arrows: true,
+			  dots: false,
+			  responsive: [
+				{
+				  breakpoint: 768,
+				  settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					dots: false,
+					autoplay: true,
+					arrows: false,
+					infinite: true,
+					cssEase: 'linear'
+				  }
+				},
+				{
+				  breakpoint: 480,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: false,
+					autoplay: true,
+					arrows: false,
+					infinite: true,
+					cssEase: 'linear'
+				  }
+				}
+			  ]
+			});
+		}
+		if($('.webcourseslider').length>0){
+			$('.webcourseslider').slick({
+			  infinite: true,
+			  slidesToShow: 3,
+			  slidesToScroll: 3,
+			  autoplay: false,
+			  arrows: true,
+			  dots: false,
+			  responsive: [
+				{
+				  breakpoint: 768,
+				  settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					dots: false,
+					autoplay: true,
+					arrows: false,
+					infinite: true,
+					cssEase: 'linear'
+				  }
+				},
+				{
+				  breakpoint: 480,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: false,
+					autoplay: true,
+					arrows: false,
+					infinite: true,
+					cssEase: 'linear'
+				  }
+				}
+			  ]
+			});	
+		}
+
+        if($('.mobileslider').length>0){
+			$('.mobileslider').slick({
+			  infinite: true,
+			  slidesToShow: 3,
+			  slidesToScroll: 3,
+			  autoplay: false,
+			  arrows: true,
+			  dots: false,
+			  centerMode: false,
+			  responsive: [
+				{
+				  breakpoint: 768,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: false,
+					autoplay: true,
+					arrows: false,
+					infinite: true,
+					cssEase: 'linear'
+				  }
+				}
+			  ]
+			});	
+		}
+        if($('.recordedcourseslider').length>0){
+			$('.recordedcourseslider').slick({
+			  infinite: true,
+			  slidesToShow: 3,
+			  slidesToScroll: 3,
+			  autoplay: false,
+			  arrows: true,
+			  dots: false,
+			  responsive: [
+				{
+				  breakpoint: 768,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: false,
+					autoplay: true,
+					arrows: false,
+					infinite: true,
+					cssEase: 'linear'
+				  }
+				}
+			  ]
+			});	
+		}
+		if($('.livecourseslider').length>0){
+			$('.livecourseslider').slick({
+			  infinite: true,
+			  slidesToShow: 3,
+			  slidesToScroll: 3,
+			  autoplay: false,
+			  arrows: true,
+			  dots: false,
+			  responsive: [
+				{
+				  breakpoint: 768,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: false,
+					autoplay: true,
+					arrows: false,
+					infinite: true,
+					cssEase: 'linear'
+				  }
+				}
+			  ]
+			});	
+		}
+		if($('.testseriesslider').length>0){
+			$('.testseriesslider').slick({
+			  infinite: true,
+			  slidesToShow: 3,
+			  slidesToScroll: 3,
+			  autoplay: false,
+			  arrows: true,
+			  dots: false,
+			  responsive: [
+				{
+				  breakpoint: 768,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					dots: false,
+					autoplay: true,
+					arrows: false,
+					infinite: true,
+					cssEase: 'linear'
+				  }
+				}
+			  ]
+			});	
+		}
+
+		$('.dropdownhover').on('mouseover',function(){
+			$(this).addClass("open");
+		});
+		$('.paidcoursehover').on('mouseover',function(){
+			$(this).addClass("open");
+			$('.mocktesthover').removeClass("open");
+			$('.freetesthover').removeClass("open");
+		});
+		$('.mocktesthover').on('mouseover',function(){
+			$(this).addClass("open");
+			$('.freetesthover').removeClass("open");
+			$('.paidcoursehover').removeClass("open");
+			$('#examsubcatweb').css('display','none');
+			$('#courseexamwise').css('display','none');
+		});
+		$('.freetesthover').on('mouseover',function(){
+			$(this).addClass("open");
+			$('.mocktesthover').removeClass("open");
+			$('.paidcoursehover').removeClass("open");
+			$('#examsubcatweb').css('display','none');
+			$('#courseexamwise').css('display','none');
+		});
+		$('.successinner').on('mouseover',function(){
+			$('.successinner').removeClass('successinneractive');
+			$(this).addClass('successinneractive');
+		});	
+		$('.hoverquicklink').on('mouseover',function(){
+			$('.hoverquicklink').removeClass('text-theme');
+			$(this).addClass('text-theme');
+		});
+		$('body').on('click','.btnlogincss',function(){
+			$('#label-register').trigger('click');
+			/*
+			$('.register-info-box').fadeIn();
+			$('.login-info-box').fadeOut();
+			$('.white-panel').removeClass('right-log');
+			$('.login-show').addClass('show-log-panel');
+			$('.register-show').removeClass('show-log-panel');
+			*/
+		});
+		$('body').on('click','.btnregistercss',function(){
+			$('#label-login').trigger('click');
+			/*
+			$('.register-info-box').fadeIn();
+			$('.login-info-box').fadeOut();
+			$('.white-panel').removeClass('right-log');
+			$('.login-show').addClass('show-log-panel');
+			$('.register-show').removeClass('show-log-panel');
+			*/
+		});
+		$('.login-reg-panel input[type="radio"]').on('change', function() {
+			if ($('#log-login-show').is(':checked')) {
+				$('.register-info-box').fadeOut();
+				$('.login-info-box').fadeIn();
+				$('.white-panel').addClass('right-log');
+				$('.register-show').addClass('show-log-panel');
+				$('.login-show').removeClass('show-log-panel');
+			} else if ($('#log-reg-show').is(':checked')) {
+				$('.register-info-box').fadeIn();
+				$('.login-info-box').fadeOut();
+				$('.white-panel').removeClass('right-log');
+				$('.login-show').addClass('show-log-panel');
+				$('.register-show').removeClass('show-log-panel');
+			}
+		});
+		$('#register_s').on('submit', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var form = new FormData(this);
+			$.ajax({
+				method: 'POST',
+				url: 'https://main.apnikaksha.net/pages/signup',
+				data: form,
+				processData: false,
+				contentType: false,
+				beforeSend: function() {
+					$('.register_s').attr("disabled", "disabled");
+					$('.register_s').html("Please Wait...");
+				},
+				success: function(data) {
+					var res = JSON.parse(data).status
+					if (res == 200) {
+						gtag('event', 'conversion', {'send_to': 'AW-715132402/PKZfCL29qskBEPKbgNUC'});
+						$('.register_s').attr("disabled",false);
+						$('.register_s').html("Register");
+						location.reload(true);
+					} else {
+						alert(JSON.parse(data).message);
+						$('.register_s').attr("disabled",false);
+						$('.register_s').html("Register");
+					}
+				},
+				error: function(error) {
+					
+					$('.register_s').attr("disabled",false);
+					$('.register_s').html("Register");
+				}
+			});
+        });
+        $('#registernewsubmit').on('submit', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var form = new FormData(this);
+			$.ajax({
+				method: 'POST',
+				url: 'https://main.apnikaksha.net/pages/signup',
+				data: form,
+				processData: false,
+				contentType: false,
+				beforeSend: function() {
+					$('.registernewsubmit').attr("disabled", "disabled");
+					$('.registernewsubmit').html("Please Wait...");
+				},
+				success: function(data) {
+					var res = JSON.parse(data).status
+					if (res == 200) {
+						gtag('event', 'conversion', {'send_to': 'AW-715132402/PKZfCL29qskBEPKbgNUC'});
+						$('.registernewsubmit').attr("disabled",false);
+						$('.registernewsubmit').html("Register");
+						location.reload(true);
+					} else {
+						alert(JSON.parse(data).message);
+						$('.registernewsubmit').attr("disabled",false);
+						$('.registernewsubmit').html("Register");
+					}
+				},
+				error: function(error) {
+					$('.registernewsubmit').attr("disabled",false);
+					$('.registernewsubmit').html("Register");
+				}
+			});
+        });
+		$('#login').on('submit', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var form = new FormData(this);
+			$.ajax({
+                method: 'POST',
+                url: 'https://main.apnikaksha.net/pages/login',
+                data: form,
+                async: false,
+                processData: false,
+                contentType: false,
+				beforeSend: function() {
+					$('.login').attr("disabled", "disabled");
+					$('.login').html("Please Wait...");
+				},
+                success: function(data) {
+                    
+                    var res = JSON.parse(data).status
+                    if (res == 200) {
+						let userId = JSON.parse(data)['data']['userid'];
+						let windowName = Math.random(); 
+						if(parseInt()) {
+							
+						firebase.database().ref('weblogins').child(userId).set(windowName).then(() => {
+							sessionStorage.setItem("userId",userId);
+							sessionStorage.setItem("windowName", windowName);
+							location.reload(true);
+						});
+						} else {
+							location.reload(true);
+						}
+						
+                        
+						$('.login').attr("disabled",false);
+						$('.login').html("Login");
+                    } else {
+                        alert(JSON.parse(data).message);
+						$('.login').attr("disabled",false);
+						$('.login').html("Login");
+                    }
+                },
+                error: function(error) {
+                    
+					$('.login').attr("disabled",false);
+					$('.login').html("Login");
+                }
+            });
+		});
+        $('#loginnewsubmit').on('submit', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var form = new FormData(this);
+			$.ajax({
+                method: 'POST',
+                url: 'https://main.apnikaksha.net/pages/login',
+                data: form,
+                async: false,
+                processData: false,
+                contentType: false,
+				beforeSend: function() {
+					$('.loginnewsubmit').attr("disabled", "disabled");
+					$('.loginnewsubmit').html("Please Wait...");
+				},
+                success: function(data) {
+                    
+                    var res = JSON.parse(data).status
+                    if (res == 200) {
+						let userId = JSON.parse(data)['data']['userid'];
+						let windowName = Math.random(); 
+						if(parseInt()) {
+							
+						firebase.database().ref('weblogins').child(userId).set(windowName).then(() => {
+							sessionStorage.setItem("userId",userId);
+							sessionStorage.setItem("windowName", windowName);
+							location.reload(true);
+						});
+						} else {
+							location.reload(true);
+						}
+						
+                        
+						$('.loginnewsubmit').attr("disabled",false);
+						$('.loginnewsubmit').html("Login");
+                    } else {
+                        alert(JSON.parse(data).message);
+						$('.loginnewsubmit').attr("disabled",false);
+						$('.loginnewsubmit').html("Login");
+                    }
+                },
+                error: function(error) {
+                    
+					$('.login').attr("disabled",false);
+					$('.login').html("Login");
+                }
+            });
+		});
+        $('body').on('click','.registeropen', function(e) {
+			$('#Loginnew').modal('hide');
+			$('#Registernew').modal('show');
+		});
+		$('.loginopen').on('click', function(e) {
+			$('#Registernew').modal('hide');
+			$('#Loginnew').modal('show')
+		});
+		$('#logout').on('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            logout();
+
+        })
+        
+		function logout() {
+			$.ajax({
+                method: 'get',
+                url: 'https://main.apnikaksha.net/pages/logout',
+                success: function(data) {
+					sessionStorage.removeItem("windowName");
+					sessionStorage.removeItem("userId");
+                    location.reload(true);
+                },
+                error: function(error) {
+                    
+                }
+            });
+		}
+		$('#contactform').on('submit', function(e) {
+            e.preventDefault();
+			var formdata=new FormData(this);
+			$('.showmessage').slideUp();
+			formdata.append('toemail','');
+            $.ajax({
+                method: 'POST',
+                url: 'https://apnikakshaapi.teachx.in/post/contactemail',
+			    data:formdata,
+				processData: false,
+                contentType: false,
+				"headers": {
+					"auth-key": "appxapi",
+					"client-service": "Appx",
+					"User-ID": "33715",
+					"Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMzNzE1IiwiZW1haWwiOiJzYW1hcnRoczQ0OUBnbWFpbC5jb20iLCJ0aW1lc3RhbXAiOjE2MzEzMDUwMTZ9.BRBpPPrxYdcZ63fris2-6A8tLUtX8yV03f07HGq43as"
+				},
+				beforeSend: function() {
+					$('.contactform').attr("disabled", "disabled");
+					$('.contactform').html("Please Wait...");
+				},
+                success: function(data) {
+					$('.showmessage').slideDown();
+					$('#contactform').trigger('reset');
+					$('.contactform').attr("disabled",false);
+					$('.contactform').html("Send Message");
+                },
+                error: function(error) {
+                    
+					$('.contactform').attr("disabled",false);
+					$('.contactform').html("Send Message");
+                }
+            });
+
+        })
+		//featured videos
+		if($('.featuredvideohtml').length>0){
+			var featuredstart = 0;  
+			$('.loadmorefeaturedvideo').on('click',function(){
+				featuredstart+=10;
+				getmorevideos(featuredstart);
+			});
+			getmorevideos(featuredstart);
+		}
+		function getmorevideos(featuredstart){
+			$.ajax({
+				url: "https://apnikakshaapi.teachx.in/get/featuredvideov2",
+				type: 'GET',
+				data:'start='+featuredstart,
+				"headers": {
+					"auth-key": "appxapi",
+					"client-service": "Appx",
+					"User-ID": "33715",
+					"Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjMzNzE1IiwiZW1haWwiOiJzYW1hcnRoczQ0OUBnbWFpbC5jb20iLCJ0aW1lc3RhbXAiOjE2MzEzMDUwMTZ9.BRBpPPrxYdcZ63fris2-6A8tLUtX8yV03f07HGq43as"
+				},
+				beforeSend: function() {
+					$(".pleasewait").attr('style','display:block');
+				},
+				success: function(resp) {
+					var subhtml='';
+					
+					var fulldata = resp['data'];
+					if(fulldata.length>0){
+						$.each(fulldata, function(i, item) {
+							subhtml+="<div class='col-md-4 col-xs-12'>";
+							subhtml+="<div class='featuredimg'>";
+							item.videoid= stringdecrypt(item.videoid);
+							subhtml+="<div class='featuredimgbefore'><iframe width='100%' height='240' src='https://www.youtube.com/embed/"+item.videoid+"'></iframe></div>";
+							//subhtml+="<div class='text-center p-l-r-20'><h6>"+item.title+"</h6></div>";
+							//subhtml+="<div class='text-right clrgrey'><i class='fa fa-thumbs-up'></i> "+item.likes+" <i class='fa fa-eye'></i> "+item.views+"</div>";
+							subhtml+="</div></div>";
+						});
+					}else{
+						 var subhtml='<div class="col-md-12"><div class="alert alert-danger">Videos Not Found</div></div>';
+						 $('.loadmorefeaturedvideo').hide();
+					}
+					if(fulldata.length<10){
+						$('.loadmorefeaturedvideo').hide();
+					}
+					$('.featuredvideohtml').append(subhtml);
+					$(".pleasewait").attr('style','display:none');
+				},
+				error: function(e) {
+					
+					$(".pleasewait").attr('style','display:none');
+				}
+			});
+		}
+		
+		
+		$('body').on('click','.openpdf',function(e){
+			e.preventDefault();
+			var url=$(this).attr('data-link');
+			var options = {
+				pdfOpenParams: { scrollbar: '1', toolbar: '0', statusbar: '1', messages: '1', navpanes: '1' }
+			};
+			PDFObject.embed(url, "#my-pdf",options);
+			$('#viewpdf').modal({
+				backdrop: 'static',
+				keyboard: false
+			});
+		});
+		
+		if($.trim($('.whyfirstpara-html-index').html())==''){
+			$('.whyfirstpara-html-index').parents('.row').addClass('hide d-none');
+		}
+    });
+</script>
+<!-- js : Common js include End -->
+
+
+<div class="razorpay-container" style="z-index: 1000000000; position: fixed; top: 0px; display: none; left: 0px; height: 100%; width: 100%; backface-visibility: hidden; overflow-y: visible;"><style>@keyframes rzp-rot{to{transform: rotate(360deg);}}@-webkit-keyframes rzp-rot{to{-webkit-transform: rotate(360deg);}}</style><div class="razorpay-backdrop" style="min-height: 100%; transition: all 0.3s ease-out 0s; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;"><span style="text-decoration: none; background: rgb(214, 68, 68); border: 1px dashed white; padding: 3px; opacity: 0; transform: rotate(45deg); transition: opacity 0.3s ease-in 0s; font-family: lato, ubuntu, helvetica, sans-serif; color: white; position: absolute; width: 200px; text-align: center; right: -50px; top: 50px;">Test Mode</span></div><iframe style="opacity: 1; height: 100%; position: relative; background: none; display: block; border: 0 none transparent; margin: 0px; padding: 0px; z-index: 2;" allowtransparency="true" frameborder="0" width="100%" height="100%" allowpaymentrequest="true" src="https://api.razorpay.com/v1/checkout/public" class="razorpay-checkout-frame"></iframe></div></body></html>
+
